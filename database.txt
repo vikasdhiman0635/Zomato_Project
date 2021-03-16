@@ -1,0 +1,74 @@
+Create Table ZomatoManu(
+ Foodid Number Primary Key,
+ Foodname Varchar(20),
+Foodmesage Varchar(20),
+Foodcost number(5),
+Foodtime Varchar(10),
+Costmessage Varchar(50),
+Rating Varchar(10),
+Image Varchar(30)
+);
+drop table Zomatomanu;
+
+INSERT INTO ZOMATOMANU VALUES(101,'Dal Chaval','Heavy Food','100','30 min','Accept cash','3.9','dal chaval.jpg');
+INSERT INTO ZOMATOMANU VALUES(102,'Dossa','Heavy Food','150','30 min','Accept cash','4.5','dossa.jpg');
+INSERT INTO ZOMATOMANU VALUES(103,'Rajama Chaval','Heavy Food','70','30 min','Accept cash','4.5','rajama chaval.jpg');
+commit;
+SELECT * FROM ZOMATOMANU;
+
+insert into zomatocart values(01,'hhds','dnbn',654,'dvjhdb','34351','sdfgdfs',165,'jhdfbkjdf','sdhfg','sdfgdsf','sdfgdsfsdf','sdfgsdfgsdf','dfgsdf');
+
+select * from zomatocart;
+desc zomatocart;
+delete from zomatocart where foodId=101;
+
+CREATE TABLE USERREGISTRATION(
+FIRSTNAME VARCHAR(19),
+LASTNAME VARCHAR(15),
+MOBILENO VARCHAR(13),
+EMAILID VARCHAR(30),
+USERNAME VARCHAR(19),
+PASSWORD VARCHAR(10)
+);
+DROP TABLE USERREGISTRATION;
+
+INSERT INTO USERREGISTRATION VALUES('ram','singh','98139334590','ramsingh009@gmail.com','ram','singh');
+SELECT * FROM USERREGISTRATION;
+
+--CREATE TABLE CITY(
+--CITY VARCHAR(19));
+--INSERT INTO CITY VALUES('karnal');
+--INSERT INTO CITY VALUES('panipat');
+--SELECT * FROM CITY;
+--drop table city;
+
+
+CREATE TABLE ZOMATOCART(
+FOODID NUMBER PRIMARY KEY,
+IMAGE VARCHAR(30),
+NAME VARCHAR(20),
+FOODCOST NUMBER(5),
+FOODMESAGE VARCHAR(20),
+COSTMESSAGE VARCHAR(50),
+TIME VARCHAR(10),
+QTY NUMBER(3),
+CARDHOLDERNO VARCHAR(30),
+CARDNO VARCHAR(15),
+VALIDUPTO VARCHAR(10),
+CVV VARCHAR(10),
+PWD VARCHAR(15),
+USERNAME VARCHAR(30)
+);
+
+INSERT INTO ZOMATOCART VALUES ('101','dal chaval.jpg','Dal Chaval','100','Heavy Food','Accept cash','30 min','100','ram','13456745678','01/33','100','iscd','ram');
+SELECT * FROM ZOMATOCART;
+drop table zomatocart;
+
+create table city
+(
+CITY varchar(20)
+);
+insert into city values('panipat');
+insert into city values('karnal');
+commit;
+select * from city;
